@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+
+<head>
+  <meta charset="utf-8">
+  <title>BIT Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c">
+  <!-- This is using the GDS system from the UK Government digital service [https://github.com/alphagov/govuk-frontend/releases/tag/v5.6.0] -->
+  <link rel="stylesheet" href="/static/govuk-frontend-5.6.0.min.css">
+</head>
+
+<body class="govuk-template__body">
+<script>
+  document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');
+</script>
+<a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+<header class="govuk-header govuk-header--full-width-border" data-module="govuk-header">
+  <div class="govuk-header__container app-width-container">
+    <div class="govuk-header__logo app-header-logo">
+      <a href="/" class="govuk-header__link govuk-header__link--homepage">
+        <svg focusable="false" role="img" class="govuk-header__logotype" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" height="30" width="30" aria-label="BITS">
+          <title>Bits</title>
+          <path d="M40,40 C30,50 40,70 30,80 C20,90 35,100 35,110 C35,120 25,125 20,135 C15,145 20,160 30,160
+           C40,160 55,145 70,140 C85,135 90,130 100,125 C110,120 120,130 120,140 C120,150 130,160 145,160
+           C160,160 170,150 175,130 C180,110 165,105 155,100 C145,95 135,85 140,75 C145,65 150,50 145,40
+           C140,30 125,40 110,35 C95,30 80,25 70,30 C60,35 50,30 40,40" fill="none" stroke="#003366" stroke-width="2"/>
+
+          <!-- Server Icon (simple stacked rectangles) -->
+          <rect x="70" y="50" width="50" height="20" fill="#006699" rx="5" ry="5"/>
+          <rect x="70" y="80" width="50" height="20" fill="#006699" rx="5" ry="5"/>
+          <rect x="70" y="110" width="50" height="20" fill="#006699" rx="5" ry="5"/>
+
+          <!-- Small circles to represent server lights -->
+          <circle cx="85" cy="60" r="2" fill="#ffffff"/>
+          <circle cx="85" cy="90" r="2" fill="#ffffff"/>
+          <circle cx="85" cy="120" r="2" fill="#ffffff"/>
+        </svg>
+        <span class="Bit Blog">
+          Blog
+        </span>
+      </a>
+    </div>
+  </div>
+</header>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content">
+    <h1 class="govuk-heading-xl">Default page template</h1>
+  </main>
+</div>
+<footer class="govuk-footer">
+  <div class="govuk-width-container">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        <span>This is a span of text in the footer</span>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="module" src="/static/govuk-frontend-5.6.0.min.js"></script>
+<script type="module">
+  import {
+		initAll
+	} from '/static/govuk-frontend.min.js'
+	initAll()
+</script>
+</body>
+
+</html>
